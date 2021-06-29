@@ -1,4 +1,4 @@
-package br.edu.ifsp.data.model;
+package br.edu.livros.acervo.data.model;
 
 import java.io.Serializable;
 
@@ -26,12 +26,18 @@ public class Person implements Serializable{
 	@Column(name = "last_name", nullable = false, length = 80)
 	private String lastName;
 	
+	@Column(name = "email", nullable = false, length = 80, unique = true)
+	private String email;
+
+	@Column(name = "password", nullable = false, length = 80)
+	private String password;
+
 	@Column(nullable = false, length = 80)
 	private String address;
-	
-	@Column(nullable = false, length = 10)
-	private String gender;	
-	
+
+	@Column(nullable = false, length = 80)
+	private String gender;
+
 	public Person() {
 		
 	}
@@ -60,6 +66,22 @@ public class Person implements Serializable{
 		this.lastName = lastName;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
 	public String getAddress() {
 		return address;
 	}
@@ -76,15 +98,18 @@ public class Person implements Serializable{
 		this.gender = gender;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((address == null)	? 0 : address.hashCode());
-		result = prime * result + ((firstName == null)	? 0 : firstName.hashCode());
-		result = prime * result + ((gender == null)		? 0 : gender.hashCode());
-		result = prime * result + ((id == null)			? 0 : id.hashCode());
-		result = prime * result + ((lastName == null)	? 0 : lastName.hashCode());
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
+		result = prime * result + ((gender == null) ? 0 : gender.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
+		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		return result;
 	}
 
@@ -101,6 +126,11 @@ public class Person implements Serializable{
 			if (other.address != null)
 				return false;
 		} else if (!address.equals(other.address))
+			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
 			return false;
 		if (firstName == null) {
 			if (other.firstName != null)
@@ -122,6 +152,12 @@ public class Person implements Serializable{
 				return false;
 		} else if (!lastName.equals(other.lastName))
 			return false;
+		if (password == null) {
+			if (other.password != null)
+				return false;
+		} else if (!password.equals(other.password))
+			return false;
 		return true;
 	}
+
 }
