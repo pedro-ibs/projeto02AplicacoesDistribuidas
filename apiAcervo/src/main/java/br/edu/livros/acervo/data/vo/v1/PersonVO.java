@@ -1,9 +1,7 @@
 package br.edu.livros.acervo.data.vo.v1;
 
 import java.io.Serializable;
-
 import org.springframework.hateoas.RepresentationModel;
-
 import com.github.dozermapper.core.Mapping;
 
 public class PersonVO extends RepresentationModel implements Serializable {
@@ -124,8 +122,4 @@ public class PersonVO extends RepresentationModel implements Serializable {
 			return false;
 		return true;
 	}	
-	
-	
-	
-	
 }
