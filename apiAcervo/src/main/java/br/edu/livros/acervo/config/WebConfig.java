@@ -1,4 +1,4 @@
-package br.edu.ifsp.config;
+package br.edu.livros.acervo.config;
 
 
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import br.edu.ifsp.serialization.converter.YamlJackson2HttpMessageConverter;
+import br.edu.livros.acervo.serialization.converter.YamlJackson2HttpMessageConverter;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {

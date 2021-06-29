@@ -1,4 +1,4 @@
-package br.edu.ifsp.data.vo.v1;
+package br.edu.livros.acervo.data.vo.v1;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package br.edu.ifsp.controller;
+package br.edu.livros.acervo.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.edu.ifsp.data.vo.v1.PersonVO;
-import br.edu.ifsp.services.PersonServices;
+import br.edu.livros.acervo.data.vo.v1.PersonVO;
+import br.edu.livros.acervo.services.PersonServices;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;

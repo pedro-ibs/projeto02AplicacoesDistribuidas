@@ -1,9 +1,9 @@
-package br.edu.ifsp.repository;
+package br.edu.livros.acervo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.edu.ifsp.data.model.Person;
+import br.edu.livros.acervo.data.model.Person;
 
 @Repository //org.springframework.stereotype
 public interface PersonRepository extends JpaRepository<Person, Long>{

@@ -1,15 +1,15 @@
-package br.edu.ifsp.services;
+package br.edu.livros.acervo.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.edu.ifsp.converter.DozerConverter;
-import br.edu.ifsp.data.model.Person;
-import br.edu.ifsp.data.vo.v1.PersonVO;
-import br.edu.ifsp.exception.ResourceNotFoundException;
-import br.edu.ifsp.repository.PersonRepository;
+import br.edu.livros.acervo.converter.DozerConverter;
+import br.edu.livros.acervo.data.model.Person;
+import br.edu.livros.acervo.data.vo.v1.PersonVO;
+import br.edu.livros.acervo.exception.ResourceNotFoundException;
+import br.edu.livros.acervo.repository.PersonRepository;
 
 @Service
 public class PersonServices {

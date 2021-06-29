@@ -1,4 +1,4 @@
-package br.edu.ifsp.exception.handler;
+package br.edu.livros.acervo.exception.handler;
 
 import java.util.Date;
 import org.springframework.http.HttpStatus;
@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import br.edu.ifsp.exception.ExceptionResponse;
-import br.edu.ifsp.exception.ResourceNotFoundException;
+
+import br.edu.livros.acervo.exception.ExceptionResponse;
+import br.edu.livros.acervo.exception.ResourceNotFoundException;
 
 @ControllerAdvice
 @RestController

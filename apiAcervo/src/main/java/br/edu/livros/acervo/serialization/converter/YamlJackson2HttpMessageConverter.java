@@ -1,4 +1,4 @@
-package br.edu.ifsp.serialization.converter;
+package br.edu.livros.acervo.serialization.converter;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter;

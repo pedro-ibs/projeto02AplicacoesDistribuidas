@@ -1,4 +1,4 @@
-package br.edu.ifsp.exception;
+package br.edu.livros.acervo.exception;
 
 import java.io.Serializable;
 import java.util.Date;

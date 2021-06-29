@@ -1,4 +1,4 @@
-package br.edu.ifsp;
+package br.edu.livros.acervo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
