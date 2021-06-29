@@ -46,6 +46,6 @@ sudo /CaminhdoDoRepo/AulasAplicacoesDistribuidas/runLappLinux.sh
  * Configure o acesso da api ao banco de dados em [application.properties](https://github.com/pedro-ibs/projeto02AplicacoesDistribuidas/blob/main/apiAcervo/src/main/resources/application.properties) e [pom.xml](https://github.com/pedro-ibs/projeto02AplicacoesDistribuidas/blob/main/apiAcervo/pom.xml)
 
 
- * Inicie a parte web pelo xampp (caso use outro inicie a web por lá). É preciso ter a Base de dados  do banco chamada **rest_spring_boot_ifsp**, ao executar a api ela criará as tabelas suas restrições, e irá popular as tabelas de acordo com [migration](hhttps://github.com/pedro-ibs/projeto02AplicacoesDistribuidas/tree/main/apiAcervo/src/main/resources/db/migration) da api. Caso alguma configuração do SQL seja alterado em uma das tabelas na api é preciso apagar a tabela em questão ou alterar diretamente no banco de dados.
+ * Inicie a parte web pelo xampp (caso use outro inicie a web por lá). É preciso ter a Base de dados  do banco chamada **rest_spring_boot_ifsp**, ao executar a api ela criará as tabelas suas restrições, e irá popular as tabelas de acordo com [migration](https://github.com/pedro-ibs/projeto02AplicacoesDistribuidas/tree/main/apiAcervo/src/main/resources/db/migration) da api. Caso alguma configuração do SQL seja alterado em uma das tabelas na api é preciso apagar a tabela em questão ou alterar diretamente no banco de dados.
 
  * Inicie a api pelo Eclipse ou Maven
