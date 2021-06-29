@@ -36,6 +36,8 @@ public class PersonServices {
 		var entity = repository.findById(person.getKey()).orElseThrow(() -> new ResourceNotFoundException ("Não encontramos registros para este ID"));
 		entity.setFirstName(person.getFirstName());
 		entity.setLastName(person.getLastName());
+		entity.setEmail(person.getEmail());		
+		entity.setPassword(person.getPassword());
 		entity.setAddress(person.getAddress());
 		entity.setGender(person.getGender());
 		
