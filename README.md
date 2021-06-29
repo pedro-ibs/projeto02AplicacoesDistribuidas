@@ -12,15 +12,20 @@ Repositório do projeto02 da materia de Aplicações Distribuídas -ADS - 2021
 
 
 ## **Criando o .gitignore**
-Para que a configuração de cada ambiente não de erro é importante criar um arquivo **.gitignore** na raiz do repositório, nele deve conter as seguintes configurações:
+Para que a configuração de cada ambiente não de erro é importante criar um arquivo [.gitignore](https://github.com/pedro-ibs/projeto02AplicacoesDistribuidas/blob/main/.gitignore) na raiz do repositório, nele deve conter as seguintes configurações:
 
 ```
-./apiAcervo/pom.xml
-./apiAcervo/src/main/resources/application.properties
-./web/application/config/config.php
+/apiAcervo/metadata/
+./apiAcervo/metadata/
+
 /apiAcervo/pom.xml
+./apiAcervo/pom.xml
+
 /apiAcervo/src/main/resources/application.properties
+./apiAcervo/src/main/resources/application.properties
+
 /web/application/config/config.php
+./web/application/config/config.php
 
 ```  
 
