@@ -1,0 +1,14 @@
+
+/apiAcervo/metadata/
+./apiAcervo/metadata/
+
+/apiAcervo/pom.xml
+./apiAcervo/pom.xml
+
+/apiAcervo/src/main/resources/application.properties
+./apiAcervo/src/main/resources/application.properties
+
+/web/application/config/config.php
+./web/application/config/config.php
+
+
