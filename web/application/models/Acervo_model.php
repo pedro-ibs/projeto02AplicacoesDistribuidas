@@ -30,7 +30,7 @@ class Acervo_model extends CI_Model{
     public function get_categorias()
     {
 
-        $url       = 'http://localhost:8080/Category/';
+        $url       = 'http://localhost:8080/api/category/v1';
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         // $campos    = json_encode(array('status' => 'paused'));
 
@@ -68,7 +68,7 @@ class Acervo_model extends CI_Model{
 
     public function get_categoria($id)
     {
-        $url       = 'http://localhost:8080/Category/'.$id;
+        $url       = 'http://localhost:8080/api/category/v1/'.$id;
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         // $campos    = json_encode(array('status' => 'paused'));
 
@@ -94,7 +94,7 @@ class Acervo_model extends CI_Model{
         $rst = (object)array("rst" => true, "msg" => "");
         $data = (object)$this->input->post();
 
-        $url       = 'http://localhost:8080/Category/';
+        $url       = 'http://localhost:8080/api/category/v1/';
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         $campos    = json_encode(array("category" => $data->titulo));
 
@@ -129,7 +129,7 @@ class Acervo_model extends CI_Model{
 
     public function get_livros($nome)
     {
-        $url       = 'http://localhost:8080/Book/';
+        $url       = 'http://localhost:8080/api/book/v1/';
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
 
         $ch = curl_init();
@@ -172,7 +172,7 @@ class Acervo_model extends CI_Model{
 
     public function get_livro($id)
     {
-        $url       = 'http://localhost:8080/Book/'.$id;
+        $url       = 'http://localhost:8080/api/book/v1/'.$id;
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         // $campos    = json_encode(array('status' => 'paused'));
 
@@ -204,7 +204,7 @@ class Acervo_model extends CI_Model{
 
         $path = $_FILES["imagem"]["name"];
 
-        $url       = 'http://localhost:8080/Book/';
+        $url       = 'http://localhost:8080/api/book/v1/';
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         $campos    = json_encode(
             array(
@@ -263,13 +263,11 @@ class Acervo_model extends CI_Model{
         {
             $path = $data->imagem_hidden;
         }
-        
-
-        $url       = 'http://localhost:8080/Book/';
+        $url       = 'http://localhost:8080/api/book/v1/';
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         $campos    = json_encode(
             array(
-                "id" => $data->id,
+                "key" => $data->id,
                 "title" => $data->titulo,
                 "author" => $data->autor,
                 "year" => $data->ano,
@@ -310,7 +308,7 @@ class Acervo_model extends CI_Model{
     {
         $rst = (object)array("rst" => true, "msg" => "");
 
-        $url       = 'http://localhost:8080/Book/'.$id;
+        $url       = 'http://localhost:8080/api/book/v1/'.$id;
         $cabecalho = array('Content-Type: application/json', 'Accept: application/json');
         // $campos    = json_encode(array('status' => 'paused'));
 

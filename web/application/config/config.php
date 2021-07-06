@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * caso clone o projeto inteiro no htdocs do xampp  
  */
-$config['base_url'] = 'http://localhost/projeto01AplicacoesDistribuidas/web/';
+$config['base_url'] = 'http://localhost/projeto02AplicacoesDistribuidas/web/';
 
 /*
 |--------------------------------------------------------------------------

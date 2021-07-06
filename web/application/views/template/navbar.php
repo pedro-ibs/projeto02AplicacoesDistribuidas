@@ -87,8 +87,8 @@
                         <label for="email" class="form-label">Gênero do Livro</label><br/>
                         <?php foreach($categorias as $item): ?>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="categoria" id="flexRadio<?= $item->id ?>" value="<?= $item->id ?>">
-                            <label class="form-check-label" for="flexRadio<?= $item->id ?>"><?= $item->category ?></label>
+                            <input class="form-check-input" type="radio" name="categoria" id="flexRadio<?= $item->key ?>" value="<?= $item->key ?>">
+                            <label class="form-check-label" for="flexRadio<?= $item->key ?>"><?= $item->category ?></label>
                           </div>
                         <?php endforeach; ?>
                       </div>

@@ -36,10 +36,10 @@
                             <p class="card-text"><b>Ano: </b> <?= $item->year ?></p>        
                             <p class="card-text"><b>Gênero: </b> <?= $item->category->category ?></p> 
                             <?php if($dados): ?>
-                            <button type="button" class="btn btn-warning" onclick="editaLivro(<?= $item->id ?>)">Editar</button>
-                            <button type="button" class="btn btn-danger" onclick="excluiLivro(<?= $item->id ?>)">Excluir</button>
+                            <button type="button" class="btn btn-warning" onclick="editaLivro(<?= $item->key ?>)">Editar</button>
+                            <button type="button" class="btn btn-danger" onclick="excluiLivro(<?= $item->key ?>)">Excluir</button>
                             <?php endif; ?>
-                            <button type="button" class="btn btn-primary" onclick="infoLivro(<?= $item->id ?>)">Ver mais</button>
+                            <button type="button" class="btn btn-primary" onclick="infoLivro(<?= $item->key ?>)">Ver mais</button>
                         </div>
                     </div>
                 </div>
@@ -122,8 +122,8 @@
                         <label for="email" class="form-label">Gênero do Livro</label><br/>
                         <?php foreach($categorias as $item): ?>
                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="categoria" id="flexRadio<?= $item->id ?>_edita" value="<?= $item->id ?>">
-                            <label class="form-check-label" for="flexRadio<?= $item->id ?>"><?= $item->category ?></label>
+                            <input class="form-check-input" type="radio" name="categoria" id="flexRadio<?= $item->key ?>_edita" value="<?= $item->key ?>">
+                            <label class="form-check-label" for="flexRadio<?= $item->key ?>"><?= $item->category ?></label>
                           </div>
                         <?php endforeach; ?>
                       </div>

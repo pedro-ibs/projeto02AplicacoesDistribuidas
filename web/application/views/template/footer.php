@@ -176,9 +176,9 @@
                 $("#pagina"+nome_padrao).val(data.pages);
                 $("#autor"+nome_padrao).val(data.author);
                 $("#descricao"+nome_padrao).val(data.description);
-                $("#flexRadio"+data.category.id+nome_padrao).attr("checked", "checked");
+                $("#flexRadio"+data.category.key+nome_padrao).attr("checked", "checked");
                 $("#imagem_hidden").val(data.image);
-                $("#id_edita").val(data.id);
+                $("#id_edita").val(data.key);
 
                 $("#editarLivro").modal("show")
             }
